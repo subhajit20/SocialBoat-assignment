@@ -7,7 +7,7 @@ const useSearch = (inputs) =>{
     const getVideos = async (inputs) =>{
         setLoading(true);
         try{
-            const res = await fetch(`https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=${inputs}&numResults=${10}`)
+            const res = await fetch(`https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=${inputs}&numResults=${9}`)
             const data = await res.json();
 
             console.log(data);

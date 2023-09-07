@@ -10,7 +10,7 @@ const AllVideos = ({_videos,_isLoading}) =>{
             console.log(_videos)
         }
     },[_videos])
-    return <div>
+    return <div className="min-h-screen grid grid-cols-1 justify-center">
         {
             _isLoading ?  <Loader /> : <VideoContainer _allVideos={_videos} />
         }
